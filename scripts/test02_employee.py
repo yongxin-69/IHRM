@@ -15,6 +15,7 @@ class TestEmployee(unittest.TestCase):
         print("数据:",r.json())
         api.user_id = r.json().get("data").get("id")
 
+
         print("员工id:",api.user_id)
         assert_common(self,r)
 
